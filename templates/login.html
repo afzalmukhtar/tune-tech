@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sign In/Sign Up</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="{% static 'login_style.css' %}">
+	<link rel="shortcut icon" href="{% static '/favicon.ico' %}" />
+
+</head>
+
+<body>
+	<div class="container right-panel-active">
+
+		<!-- Sign Up -->
+		<div class="container__form container--signup">
+			<form class="form" id="sign_up">
+				<h2 class="form__title">Sign Up</h2>
+				<input type="text" placeholder="User Name" class="input" id="usn_sign_up" required/>
+				<input type="email" placeholder="Email" class="input" id="email_sign_up" required/>
+				<input type="password" placeholder="Password" class="input" id="password_sign_up" required/>
+
+				<span id="sign_up_info" style="font-size: 15px; margin: 5px; padding: 10px; display: none;">
+				</span>
+				<button type="submit" form="sign_up" class="btn" value="submit">Sign Up</button>
+			</form>
+		</div>
+
+
+		<!-- Sign In -->
+		<div class="container__form container--signin">
+			<form class="form" id="sign_in">
+				<h2 class="form__title">Sign In</h2>
+				<input type="email" placeholder="Email" class="input" id="email_sign_in" />
+				<input type="password" placeholder="Password" class="input" id="password_sign_in" />
+
+				<span id="sign_in_info" style="font-size: 15px; margin: 5px; padding: 10px; color: #D8000C; background-color: #FFBABA; display: none;">
+				</span>
+
+				<button type="submit" form="sign_in" class="btn" value="submit">Sign In</button>
+			</form>
+		</div>
+
+		<!-- Overlay -->
+		<div class="container__overlay">
+			<div class="overlay">
+				<div class="overlay__panel overlay--left">
+					<button class="btn" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay__panel overlay--right">
+					<button class="btn" id="signUp">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- partial -->
+	<script src="{% static 'login.js' %}"></script>
+
+</body>
+
+</html>
