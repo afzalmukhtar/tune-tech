@@ -19,3 +19,5 @@ djangorestframework
 Pillow
 whitenoise
 gunicorn
+django-heroku
+python-decouple
