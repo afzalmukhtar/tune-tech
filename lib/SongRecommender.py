@@ -1,7 +1,7 @@
 #!/bin/python3
 
 # Load Other Files
-from .PathList import VARIABLES_PATH
+from PathList import VARIABLES_PATH
 
 # Data Format
 import pandas as pd

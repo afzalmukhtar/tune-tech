@@ -1,10 +1,10 @@
 from typing import Dict, List
-from .FaceEmotion import FaceEmotion
-from .SongLyrics import SongLyrics
-from .SongRecommender import SongRecommender
-from .SongAudio import SongAudio
-from .PathList import *
-from .secret import *
+from FaceEmotion import FaceEmotion
+from SongLyrics import SongLyrics
+from SongRecommender import SongRecommender
+from SongAudio import SongAudio
+from PathList import *
+from secret import *
 import pandas as pd
 
 from os import listdir, path

@@ -1,7 +1,7 @@
 #!/bin/python3
 
 # Load Other Files
-from .FeatureExtractor import FeatureExtractor
+from FeatureExtractor import FeatureExtractor
 import pickle
 
 # Data Format
@@ -16,7 +16,7 @@ from tensorflow.keras.preprocessing import image
 # Keras
 from keras.models import load_model
 
-from .PathList import VARIABLES_PATH, FER_MODELS_PATH, FRONT_FACE_CASCADE
+from PathList import VARIABLES_PATH, FER_MODELS_PATH, FRONT_FACE_CASCADE
 
 class FaceEmotion(FeatureExtractor):
 
@@ -97,6 +97,6 @@ if __name__ == "__main__":
     cascade_path = FRONT_FACE_CASCADE
     FER = FaceEmotion(cascade_path, paths)
     
-    from .PathList import TEST_IMAGE
+    from PathList import TEST_IMAGE
     x = FER.analyse_mood(TEST_IMAGE) # Give path of Test Image
     print(x)
