@@ -23,6 +23,8 @@ from deep_translator import GoogleTranslator
 
 # NLTK and SPACY
 import nltk
+
+
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 import spacy
@@ -33,6 +35,8 @@ from bs4 import BeautifulSoup
 
 # Math Operation
 from scipy.stats import mode
+
+
 
 
 

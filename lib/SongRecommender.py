@@ -102,13 +102,18 @@ class SongRecommender:
         percentages = self.recommender_mapping[(moods[0], moods[1])]
         # Add part to extract from lyrical or audio based on moods
         self.song_data = songs_list
+
         music_list = self.__get_songs__(percentages)
         return music_list
 
     
 if __name__ == "__main__":
 
-    from .PathList import SONG_LIST_PATH
+    from PathList import SONG_LIST_PATH
     songs = pd.read_csv(SONG_LIST_PATH)
+    songs['Mood'] = songs['Mood'].apply(lambda x : x.lower())
+    songs['audio_mood'] = songs['Mood']
+    songs['lyrics_mood'] = songs['Mood'].sample(frac = 1)
+    songs.drop(columns=['Mood'], inplace=True)
     Recommender = SongRecommender()
-    print(*Recommender.get_song_recommendation(['happy', 'neutral'], songs.iloc[0 : 5]), sep="\n")
+    print(Recommender.get_song_recommendation(['happy', 'neutral'], songs), sep="\n")

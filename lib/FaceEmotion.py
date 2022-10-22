@@ -10,7 +10,8 @@ from collections import Counter
 
 # Image
 import cv2 as cv
-from keras.preprocessing import image
+# from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 
 # Keras
 from keras.models import load_model
@@ -58,6 +59,7 @@ class FaceEmotion(FeatureExtractor):
 
     def __get_crowd_mood__(self, img):
         original_image = cv.imread(img)
+#         print(original_image)
         # cv2_imshow(original_image)
         # cv.imshow("Original Image", original_image)
         grayscale_image = cv.cvtColor(original_image, cv.COLOR_BGR2GRAY)
@@ -95,5 +97,6 @@ if __name__ == "__main__":
     cascade_path = FRONT_FACE_CASCADE
     FER = FaceEmotion(cascade_path, paths)
     
-    from PathList import TEST_IMAGE
-    FER.analyse_mood(TEST_IMAGE) # Give path of Test Image
+    from .PathList import TEST_IMAGE
+    x = FER.analyse_mood(TEST_IMAGE) # Give path of Test Image
+    print(x)
