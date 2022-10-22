@@ -17,5 +17,3 @@ Django
 django-cors-headers
 djangorestframework
 Pillow
-whitenoise
-gunicorn
