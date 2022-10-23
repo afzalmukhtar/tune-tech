@@ -3,7 +3,7 @@
 # Load Other Files
 import pickle
 import traceback
-from FeatureExtractor import FeatureExtractor
+from Feature_Extractor import FeatureExtractor
 from PathList import VARIABLES_PATH, LYRICS_MODELS_PATH
 from secret import GENIUS_API_TOKEN #,  detectlanguage_api_token
 from time import sleep
