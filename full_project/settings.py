@@ -28,7 +28,7 @@ SECRET_KEY = '9s0d6$d)nc45njo!d^s^#*8f_31-do+upgo6p+c)+r)xwm+o_y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['tune-tech.up.railway.app', 'localhost', '0.0.0']
 
 
 CORS_ORIGIN_ALLOW_ALL = True
