@@ -1,6 +1,6 @@
 #!/bin/python3
 
-import nltk
+# import nltk
 
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
