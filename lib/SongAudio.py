@@ -2,7 +2,7 @@
 
 # Load Other Files
 import pickle
-from FeatureExtractor import FeatureExtractor
+from Feature_Extractor import FeatureExtractor
 from PathList import VARIABLES_PATH, COLUMN_ORDER, AUDIO_MODELS_PATH
 from secret import spotify_client_id, spotify_client_secret
 
