@@ -4,7 +4,7 @@ from lib.Song_Lyrics import SongLyrics
 from lib.Song_Recommender import SongRecommender
 from lib.Song_Audio import SongAudio
 from lib.PathList import *
-from secret import *
+from lib.secret import *
 import pandas as pd
 
 from os import listdir, path
