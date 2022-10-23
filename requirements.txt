@@ -21,4 +21,8 @@ whitenoise
 gunicorn
 django-heroku
 python-decouple
+<<<<<<< Updated upstream
 # opencv-python
+=======
+# psycopg2-binary
+>>>>>>> Stashed changes
