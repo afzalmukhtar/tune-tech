@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import django_heroku
-import dj_database_url
-from decouple import config
+# import django_heroku
+# import dj_database_url
+# from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,7 +28,7 @@ SECRET_KEY = '9s0d6$d)nc45njo!d^s^#*8f_31-do+upgo6p+c)+r)xwm+o_y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tune-tech.up.railway.app', 'localhost', '0.0.0']
+ALLOWED_HOSTS = ['tune-tech.up.railway.app', 'http://127.0.0.1', '0.0.0.0', '*']
 
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -158,4 +158,4 @@ MODELDRIVER = ModelDriver
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 10485760
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
