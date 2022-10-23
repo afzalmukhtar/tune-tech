@@ -1,7 +1,7 @@
 #!/bin/python3
 
 # Load Other Files
-from PathList import VARIABLES_PATH
+from lib.PathList import VARIABLES_PATH
 
 # Data Format
 import pandas as pd
@@ -109,7 +109,7 @@ class SongRecommender:
     
 if __name__ == "__main__":
 
-    from PathList import SONG_LIST_PATH
+    from lib.PathList import SONG_LIST_PATH
     songs = pd.read_csv(SONG_LIST_PATH)
     songs['Mood'] = songs['Mood'].apply(lambda x : x.lower())
     songs['audio_mood'] = songs['Mood']
