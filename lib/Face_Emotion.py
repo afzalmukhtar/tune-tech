@@ -16,7 +16,7 @@ from tensorflow.keras.preprocessing import image
 # Keras
 from keras.models import load_model
 
-from PathList import VARIABLES_PATH, FER_MODELS_PATH, FRONT_FACE_CASCADE
+from lib.PathList import VARIABLES_PATH, FER_MODELS_PATH, FRONT_FACE_CASCADE
 
 class FaceEmotion(FeatureExtractor):
 
