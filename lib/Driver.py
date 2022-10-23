@@ -1,8 +1,8 @@
 from typing import Dict, List
-from FaceEmotion import FaceEmotion
-from SongLyrics import SongLyrics
-from SongRecommender import SongRecommender
-from SongAudio import SongAudio
+from Face_Emotion import FaceEmotion
+from Song_Lyrics import SongLyrics
+from Song_Recommender import SongRecommender
+from Song_Audio import SongAudio
 from PathList import *
 from secret import *
 import pandas as pd
