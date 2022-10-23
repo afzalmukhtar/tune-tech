@@ -1,1 +1,1 @@
-web: gunicorn --bind=0.0.0.0 --timeout 50000 full_project.wsgi 
+web: gunicorn full_project.wsgi --workers 1 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8443 --timeout 5000
