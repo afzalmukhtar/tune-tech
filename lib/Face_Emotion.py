@@ -1,7 +1,7 @@
 #!/bin/python3
 
 # Load Other Files
-from Feature_Extractor import FeatureExtractor
+from lib.Feature_Extractor import FeatureExtractor
 import pickle
 
 # Data Format
